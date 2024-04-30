@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+        }
+        #Container{
+            height: 500px;
+            width: 500px;
+            background-color: aquamarine;
+            border: 5px solid black;
+            margin: 5px;
+            display: flex;
+            /* these are all flex conainer property*/
+            /* flex-direction: row; */
+            /* flex-wrap: wrap-reverse; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* justify-content: space-between; */
+            /* flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse; */
+
+            /* aligin self ki privorty >>> aligin container */
+            /* now flex item property */
+            /* flex-shrink: 2; */
+            /* flex-grow: 2; */
+            /* flex order*/
+        }
+        .box{
+            height: 70px;
+            width: 70px;
+            border: 3px solid black;
+            margin: 5px;
+        }
+        #box1{
+            background-color: blue;
+            order: 3;
+            
+        }
+        #box2{
+            background-color: blueviolet;
+            /* align-self: center; */
+            order: 1;
+        }
+        #box3{
+            background-color: brown;
+            /* flex-shrink: 2; */
+            /* flex-grow: 2; */
+            order: 2;
+        }
+        #box4{
+            background-color: chartreuse;
+            /* align-self: center; */
+            order: 4;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <big>
+            Flex Container
+        </big>
+    </h1>
+    <div id="Container">
+        <div id="box1" class="box">FLEX BOX 1</div> 
+        <div id="box2" class="box">FLEX BOX 2</div> 
+        <div id="box3" class="box">FLEX BOX 3</div> 
+        <div id="box4" class="box">FLEX BOX 4</div> 
+    </div>
+</body>
+</html>

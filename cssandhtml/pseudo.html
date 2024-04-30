@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+    <style>
+        *{
+            background-color: black;
+            color: white;
+        }
+        .button{
+            height: 25px;
+            width: 100px;
+            background-color: aqua;
+            color: black;
+            border: 3px solid rgb(141, 248, 0);
+            border-radius: 10px;
+
+            /* transition property */
+            /* transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in ;
+            /* transition-timing-function: steps(2); */
+            /* transition-timing-function: ease-in-out; */
+            /* transition-delay: 0ms; */
+
+            /* both are same  */
+            transition: all 1s ease-in-out 0s;
+        }
+        .button:hover{
+            height: 30px;
+            width: 110px;
+            background-color: blue;
+            text-transform: lowercase;
+        }
+        .button:active{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1><big>Pseudo classes</big></h1>
+    <main>
+        <div >
+            <button class="button">CLICK ME</button>
+        </div>
+    </main>
+</body>
+</html>

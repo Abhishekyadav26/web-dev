@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform classes</title>
+    <style>
+        .box{
+            height: 70px;
+            width: 100px;
+            padding: 5px;
+            margin: 10px;
+            background-color: aquamarine;
+            border: 5px solid black;
+            border-radius: 10px;
+            position: relative;
+            /* left: 100px;
+            top: 100px; */
+            transition: all 1s ease-in;
+        }
+        #box1:hover{
+            /* transform: rotate(45deg); */
+            /* transform: scale(0.5); */
+            /* transform: translate(50px); */
+            transform: skew(45deg);
+
+        }
+        #box2:hover{
+            /* transform: rotate(180deg); */
+            /* transform: scale(4); */
+            /* transform: translate(50px,50px); */
+            transform: skew(360deg);
+        }
+        #box3:hover{
+            /* transform: rotatex(180deg); */
+            /* transform: scalex(2); */
+            transform: translatex(50px);
+        }
+        #box4:hover{
+            /* transform: rotatey(180deg); */
+            /* transform: scaley(2); */
+            transform: translatey(50px);
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">ROTATE 45</div>
+    <div id="box2" class="box">ROTATE 90</div>
+    <div id="box3" class="box">ROTATE x axis 180</div>
+    <div id="box4" class="box">ROTATE y axis 180</div>
+</body>
+</html>

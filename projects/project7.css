@@ -1,0 +1,36 @@
+*{
+    background-color: black;
+    color: white;
+} 
+.progress_container{
+    height: 20px;
+    width: 90%;
+    border: 5px solid rgb(248, 248, 248);
+    border-radius: 15px;
+    position: relative;
+    left: 30px;
+}
+.progress_bar{
+    height: 100%;
+    width: 2%;
+    background-color: rgb(29, 166, 201);
+    border-radius: 15px;
+
+    animation-name: animate_progress_bar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes animate_progress_bar {
+    /* from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    } */
+    0%{width: 0%;}
+    60%{width: 80%;}
+    80%{width: 60%;}
+    100%{width: 100%;}
+}    
